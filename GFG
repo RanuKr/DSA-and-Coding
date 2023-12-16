@@ -1,0 +1,15 @@
+class Solution
+{
+    public void transpose(int n, int a[][])
+    {
+        // Traverse each element of the matrix
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                // Swap a[i][j] with a[j][i]
+                int temp = a[i][j];
+                a[i][j] = a[j][i];
+                a[j][i] = temp;
+            }
+        }
+    }
+}
